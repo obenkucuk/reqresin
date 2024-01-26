@@ -26,8 +26,6 @@ class AuthController extends AutoDisposeNotifier<ScreenState> {
     state = LoadingState();
 
     try {
-      print('TRY');
-
       final response = await const AuthService().login(email, password);
 
       if (response.token != null) {
@@ -35,8 +33,6 @@ class AuthController extends AutoDisposeNotifier<ScreenState> {
         tokenNotifier.setToken(response.token!);
       }
     } on HttpException catch (e, s) {
-      print('HTTP EXCEPTION');
-
       final json = jsonDecode(e.message);
       final error = ErrorModel.fromJson(json);
 

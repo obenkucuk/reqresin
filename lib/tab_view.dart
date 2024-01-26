@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -20,28 +19,5 @@ final class TabBarView extends ConsumerWidget {
       extendBodyBehindAppBar: true,
       body: navigationShell,
     );
-  }
-}
-
-enum Destinations {
-  first,
-  second;
-
-  String get label {
-    switch (this) {
-      case Destinations.first:
-        return 'First';
-      case Destinations.second:
-        return 'Second';
-    }
-  }
-
-  Widget get icon {
-    switch (this) {
-      case Destinations.first:
-        return Icon(Icons.home);
-      case Destinations.second:
-        return Icon(Icons.settings);
-    }
   }
 }

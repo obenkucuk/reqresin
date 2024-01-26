@@ -62,7 +62,8 @@ final class CustomTextFormField extends HookWidget {
       ),
       obscureText: obscureText,
       decoration: InputDecoration(
-        contentPadding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+        contentPadding:
+            const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         hintText: hintText,
         hintStyle:
             const TextStyle(fontWeight: FontWeight.w400, color: Colors.grey),
@@ -73,27 +74,19 @@ final class CustomTextFormField extends HookWidget {
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(
-            color: Colors.red,
-          ),
+          borderSide: const BorderSide(color: Colors.red),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(
-            color: Colors.grey,
-          ),
+          borderSide: const BorderSide(color: Colors.grey),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(
-            color: Colors.blue,
-          ),
+          borderSide: const BorderSide(color: Colors.blue),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(
-            color: Colors.red,
-          ),
+          borderSide: const BorderSide(color: Colors.red),
         ),
       ),
     );
